@@ -11,6 +11,9 @@ App WatchDog is an android app built natively in Java using Android Studio. This
 
 After that open the directory from Android Studio. Go to Run -> Run app to launch the app into emulator or device.
 
+## App WatchDog Demo
+
+(/SCREENSHOTS/View Usage Stats.png)
 
 ## Overview
 
