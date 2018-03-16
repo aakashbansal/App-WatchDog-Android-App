@@ -26,6 +26,7 @@ It works as a tracker that tracks the app usage activity of a user by telling th
 * How many times was the app launched on the **Current Day** ?
 
 **App Screenshots for viewing Usage Stats**
+
 <img src="SCREENSHOTS/ViewUsageStats.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats1.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats2.png" width="200">
 
 
