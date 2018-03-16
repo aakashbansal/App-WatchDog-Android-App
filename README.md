@@ -13,7 +13,9 @@ After that open the directory from Android Studio. Go to Run -> Run app to launc
 
 ## App WatchDog Demo
 
-![View Usage Stats](SCREENSHOTS/View Usage Stats.png)
+![View Usage Stats](SCREENSHOTS/ViewUsageStats.png)
+![View Usage Stats](SCREENSHOTS/SampleUsageStats1.png)
+![View Usage Stats](SCREENSHOTS/SampleUsageStats2.png)
 
 ## Overview
 
