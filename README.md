@@ -68,4 +68,14 @@ At its core, the app has two services that constantly run in background :
 * **AppLaunchDetectService** - This service finds the current running app in foreground and checks to see if it has exceeded its **Usage Limit Quota**. If yes, the app exits. If no, app continues to run.
 * **UsageStatsUpdateService** - This service , as the name suggests, updates the **Usage Stats** (Last Used Time, No of Launches, Time In foreground ) of the given app.
 
-These two services perform the core tasks of the whole app. Everything major that is happening in the app is being constantly performed by these services in one way or the another using various helper functions defined in /**helpe**r directory.
+These two services perform the core tasks of the whole app. Everything major that is happening in the app is being constantly performed by these services in one way or the another using various helper functions defined in /**helper** directory.
+
+
+## Permissions
+
+The app requires the **USAGE STATS PERMISSION** to work. Without it, nothing in the app is going to work.
+
+```
+In some devices (such as Xiaomi), "AUTOSTART" permission will also
+be required to ensure smooth functioning of the app.
+```
