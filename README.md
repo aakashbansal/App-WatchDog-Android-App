@@ -87,12 +87,14 @@ Following type of restrictions can be set up on an app:
 * **adapter** - contain list view adapters.
 
 * **database** - contain classes for manipulating the local SQLite Database. This is further sub-divided into two folders : 
-* **dbAddUsageLimit** - for manipulating db that contains info about restriction limits set-up on apps.
-* **dbViewUsageStats** for manipulating db that contains info about **Usage Statistics** of all installed apps.
+                  * **dbAddUsageLimit**  - for manipulating db that contains info about **Restriction Limits** set-up on apps.
+                  * **dbViewUsageStats** - for manipulating db that contains info about **Usage Statistics** of all installed apps.
 
 * **DialogController** - manages the on-screen dialogs.
 
-* **fragments** - contain classes for displaying fragments. This is further sub-divided into two folders -         **AddUsageLimitDialogFragments** (containing fragments for adding usage limits) and **AppsWithUsageLimitInfoFragments** (containing fragments for viewing usage limits).
+* **fragments** - contain classes for displaying fragments. This is further sub-divided into two folders :          
+                  * **AddUsageLimitDialogFragments**    - contain fragments for **Adding Usage Limit** on app.
+                  * **AppsWithUsageLimitInfoFragments** - contain fragments for **Viewing Usage Limit Info** on app.
 
 * **helper** - contain various classes each with a different set of functions responsible for handling the different business logic of the app codebase. Each type of functions role is abstracted into different java class.
 
