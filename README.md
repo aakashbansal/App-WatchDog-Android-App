@@ -19,12 +19,15 @@ After that open the directory from Android Studio. Go to Run -> Run app to launc
 Some users may face a known issue with Android Studio while setting-up this project that says something along the lines of : 
 
 ```
-Unsupported Modules Detected : ADD MORE TEXT HERE
+Unsupported Modules Detected : Compilation is not supported for following modules: App-WatchDog-Android-App, app. Unfortunately you can't have non-Gradle Java modules and Android-Gradle modules in one project.
+
 ```
 
-To overcome this issue, go to **File -> Invalidate Caches/Restart**. 
+To overcome this issue, go to **File -> Invalidate Caches/Restart...**. Select **Invalidate and Restart** from the on-screen prompt. Android Studio will restart now.
 
-And allow the project to build afresh. This may take some time. After this step, the project should be up and running.
+Allow the project to build afresh. This may take some time. Ignore any intermediate errors such as **Error Loading Project: Cannot load 2 modules**.
+
+After this step, the project should be up and running.
 
 If the error still persists, open the **build.gradle** file . Add some random white spaces in it. This will give a **Sync Now** option on-screen. Click on that and allow the project to sync. The App should finally be working now.
 
