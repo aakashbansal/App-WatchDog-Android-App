@@ -11,9 +11,7 @@ App WatchDog is an android app built natively in Java using Android Studio. This
 
 After that open the directory from Android Studio. Go to Run -> Run app to launch the app into emulator or device.
 
-## App WatchDog Demo
 
-<img src="SCREENSHOTS/ViewUsageStats.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats1.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats2.png" width="200">
 
 ## Overview
 
@@ -26,6 +24,9 @@ It works as a tracker that tracks the app usage activity of a user by telling th
 * How much time has the app spent in foreground  on the **Current Day** ?
 * How many times was the app launched in the **Current Hour** ?
 * How many times was the app launched on the **Current Day** ?
+
+**App Screenshots for viewing Usage Stats**
+<img src="SCREENSHOTS/ViewUsageStats.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats1.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats2.png" width="200">
 
 
 ### Usage Limit Controller
