@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.blocker">
+
+    <meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="@color/colorPrimary" />
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <service
+            android:name="com.android.blocker.service.AppLaunchDetectService"
+            android:description="@string/serviceDetectAppLaunch_description"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.android.blocker.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+ AppAddUsageLimit App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.android.blocker.activity.AddAppUsageLimitActivity"
+            android:label="@string/title_activity_restrict_usage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.android.blocker.activity.ViewAppUsageStatsActivity"
+            android:label="@string/title_activity_apps_usage"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.android.blocker.receiver.AppLaunchDetectServiceStoppedReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="RelaunchService" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.blocker.service.UsageStatsUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.android.blocker.receiver.UsageStatsUpdateServiceStoppedReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartUsageServiceWhenStopped">
+            <intent-filter>
+                <action android:name="RelaunchUsageService" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.blocker.receiver.DeviceShutDownReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.blocker.receiver.DeviceTurnedOnReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.android.blocker.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.android.blocker.receiver.NotificationAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.android.blocker.activity.AboutActivity"
+            android:label="About"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.android.blocker.activity.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="50sp"
+    android:layout_marginRight="50sp"
+    android:layout_marginTop="50sp"
+    android:layout_marginBottom="50sp"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:text="@string/selectChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:text="@string/restrictByUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="20sp"
+        android:textSize="18sp"
+        android:id="@+id/usageTextView"
+        android:layout_below="@+id/instructTextView" />
+
+    <TextView
+    android:text="@string/restrictByTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textColor="#000000"
+    android:layout_marginTop="20sp"
+    android:textSize="18sp"
+    android:id="@+id/timeTextView"
+    android:layout_below="@+id/usageTextView" />
+
+    <TextView
+        android:text="@string/restrictBySpecificTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="20sp"
+        android:textSize="18sp"
+        android:id="@+id/specificTimeTextView"
+        android:layout_below="@+id/timeTextView" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/usageTextView"
+        android:id="@+id/launchCheckBox"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeTextView"
+        android:layout_marginStart="119sp"
+        android:id="@+id/timeCheckBox"
+        style="@android:style/Widget.Material.Light.CompoundButton.CheckBox"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/specificTimeCheckBox"
+        style="@android:style/Widget.DeviceDefault.Light.CompoundButton.CheckBox"
+        android:checked="false"
+        android:layout_alignBaseline="@+id/specificTimeTextView"
+        android:layout_alignBottom="@+id/specificTimeTextView"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="PROCEED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27sp"
+        android:id="@+id/proceedButton"
+        android:layout_below="@+id/specificTimeCheckBox"
+        android:textColor="@color/colorAccent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentEnd="true"
+        android:onClick="onProceedButtonSelected"/>
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:layout_alignBaseline="@+id/proceedButton"
+        android:textColor="@color/colorAccent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignBottom="@+id/proceedButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBackButtonSelected"/>
+
+
+</RelativeLayout>

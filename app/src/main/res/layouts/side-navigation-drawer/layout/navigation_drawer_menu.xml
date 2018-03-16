@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <group android:id="@+id/menu_top">
+
+        <item
+            android:id="@+id/limitAppsUsage"
+            android:icon="@drawable/limit_usage"
+            android:title="LIMIT APPS USAGE" />
+
+        <item
+            android:id="@+id/appsUsageStats"
+            android:icon="@drawable/usage_stats"
+            android:title="APPS USAGE STATS" />
+
+    </group>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="SETTINGS" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share_black"
+        android:title="SHARE via SHAREit" />
+
+    <group android:id="@+id/menu_bottom">
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="HELP" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="ABOUT" />
+    </group>
+
+</menu>

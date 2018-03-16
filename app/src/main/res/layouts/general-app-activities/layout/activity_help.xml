@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorWhite"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/view0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_toolbar"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="#d9d9d9"
+            android:padding="10sp"
+            android:text="@string/autostart_permission_text"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view0"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Apps Usage Stats"
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text=" The 'Apps Usage Stats' gives the Usage Information about the User-Installed Apps( and not the System Apps) . The Usage Information includes :\n\n
+         1. Last Used Time.\n
+         2. This Hour Launches.\n
+         3. This Day Launches.\n
+         4. This Hour Usage Time.\n
+         5. This Day Usage Time.\n\nJust click on the App to get its Usage Info.\n\n NOTE 1: Launching any App increases its Launch Count only when it is used for > 2 sec (approx.). Similar is the case with Usage Time and Last Used.\n\n NOTE 2: Hourly Usage Info gets Updated at the Beginning of every Hour (8 A.M. , 10 A.M. , 2 P.M. , 6 P.M. ,12 A.M. , and so on ).\n\n NOTE 3 : Daily Usage Info gets Updated at 12 A.M. Every Night. "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text="Limit Apps Usage"
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Add Limit"
+            android:textColor="#000066"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview5"
+            android:layout_marginLeft="10sp"
+
+            android:layout_marginTop="10sp"
+            android:text=" Click on Add (Plus Icon) to add Usage Restriction on any app.\n\n Three types of Restrictions can be added :\n\n
+         1. Restriction on number of Launches Allowed\n
+              (Per Hour and Per Day)\n\n
+         2. Restriction on Usage Time Allowed\n
+               (Per Hour and Per Day)\n\n
+         3. Restriction during Specific Time Intervals\n
+                ( App access not allowed during specified\n
+                  Time Intervals )\n\nExisting Restrictions on app can also be viewed here. Apps are grouped by the type of Restriction they have.\n\nNOTE 1 : Any App can have one or more of these Three Restrictions.\n\nNOTE 2 : Setting any of the field ( Launches Per Day / Launches Per Hour / Time Per Day / Time Per Hour ) to Zero(0) is set as ' No Limit ' on that field."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text="Delete Usage Limit on App"
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview4"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Long Press the App on Main Page under\n' Apps With Usage Restriction ' heading to delete the limit.\n\nNOTE: You can only delete the limit on an App if you have not reached your daily/hourly limit of accessing it or current time does not lie between the time interval of Restricted Access !  "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview3"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text=" Update Usage Limit on App  "
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text=" You can Update the Usage Limit on any App by first Deleting the Limit ( as explained above ) and then Adding New Limit on the same App.\n\n Obviously, it goes without saying that the Usual Deletion Criteria still holds i.e. you Can NOT Delete the Usage Limit on any App as long as you are Not Permitted to access it. "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v2"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text=" Specific Time Limit Restriction Info  "
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/x1"
+            android:layout_marginLeft="10sp"
+
+            android:layout_marginTop="10sp"
+            android:text="Following are the implications of Specific Time Limit Restriction:\n\n
+                 1. The Concerned App exits if Current Time lies between ANY of the various Specifed Time Intervals.\n\n
+                 2. In case where Initial and Final Time is same ( such as when Time Interval is set as 3 P.M. to 3 P.M.
+or 10 A.M. to 10 A.M. and so on), the user is NEVER ALLOWED to access the Concerned App.\n\n
+                 3. Also, In Case when Initial Time lies after Final Time ( such as when Time Interval is set as 3 P.M. to 2 P.M.), the user is ALLOWED to access the Concerned App in Reverse Time Format ( i.e. between 2 P.M. to 3 P.M. ).\n\nAnother Example : When Time Interval is set as 11:30 P.M. to 2:30 A.M., the user is ALLOWED to access the Concerned App between 2:30 A.M. to 11:30 P.M."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/x2"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text="What Happens When Multiple Limits Are Set ?"
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="The App is closed when 'ANY' of Restriction Criteria is met. Yes, any! \n\nThe Concerned App would Exit when :\n\n
+        1. Launch Limit is reached even when you still have Usage Time left or vice-versa i.e. Usage Time Limit is reached but you still have Launches left.\n\n
+        2. Current Time lies in the Interval in which you are not allowed to access the App even though you still have Usage Time or Launches left.\n\n
+        3. HOURLY Time/Launch Limit is reached even though DAILY Time/Launch Limit is not reached. \n\nExample: If Hourly Launch Limit is 5 Launches and Daily Launch Limit is 20 Launches, you would not be allowed to access the App 6th time in the same Hour, though you can access it next Hour.\n\n
+        4. DAILY Time/Launch Limit is reached even though HOURLY Time/Launch Limit is not reached. \n\nExample: If Hourly Usage Limit is 20 minutes and Daily Usage Limit is 2 Hours, you would not be allowed to access the App after using it for 2 Hours that day even though you have used it for only, say 10 minutes ( less than 20 minutes ) in any given Hour."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text="Notification"
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view5"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="You can choose to get Notification everyday about the Most Launched and the Most Used App.\nJust go to Settings->Notification."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view6"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text="Disabling App WatchDog"
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view7"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Urgently want to access an App but reached its Usage Limit ?\n\nDon't Worry. You can choose to disable the app for 10 minutes.\n\nBut Beware! You can only do it ' Once Per Day ' !!"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view8"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:text="Share The App"
+            android:textColor="#000066"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view10"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Just click on 'Share via Shareit' .\n\n"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App WatchDog"
+        android:layout_marginTop="140sp"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000066"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@mipmap/appicon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Bugs and Suggestions :"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView4"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aakashbansals23@gmail.com"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView3"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks for using the app. Let WatchDog control your App Distractions !"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10sp"
+        android:id="@id/textView"
+        android:textSize="10sp"/>
+
+</RelativeLayout>

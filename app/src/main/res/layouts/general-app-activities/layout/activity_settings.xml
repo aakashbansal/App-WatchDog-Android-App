@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Disable App WatchDog"
+    android:textColor="#000000"
+    android:layout_marginTop="20sp"
+    android:layout_marginLeft="20sp"
+    android:layout_below="@+id/my_toolbar"
+    android:onClick="onDisableAppOptionClicked"
+    android:id="@id/textView"
+    android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/textView2"
+        android:text="( for 10 Minutes ) "
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/textView"
+        />
+
+
+    <View
+        android:layout_width="325sp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/textView3"
+        android:text="Get Daily Notification"
+        android:textColor="#000000"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@+id/textView2"
+        android:textSize="18sp"
+        />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationSwitch"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignTop="@+id/textView3"
+        android:onClick="onSwitchClicked"
+        android:layout_marginLeft="100sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/textView4"
+        android:text="( Most Used and Most Launched App ) "
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/textView3"
+        />
+
+    <View
+        android:layout_width="325sp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView4"
+        android:id="@id/textView5"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autostart_heading_text"
+        android:textColor="#000000"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@+id/textView5"
+        android:onClick="onProvideAutostartPermissionOptionClicked"
+        android:id="@id/textView6"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="( for Xiaomi devices ) "
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/textView6"
+        />
+
+
+</RelativeLayout>

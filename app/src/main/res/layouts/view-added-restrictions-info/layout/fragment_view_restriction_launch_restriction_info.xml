@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:layout_marginTop="20sp"
+    android:id="@+id/relativeLayout">
+
+
+    <TextView
+        android:text="Launches Allowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/textView3"
+        android:layout_marginTop="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Per Hour : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/textView3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:text="Per Day : "
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="50sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:id="@+id/perDayTime"
+        android:layout_below="@+id/perHourTime"
+        android:layout_alignStart="@+id/perHourTime"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:id="@+id/perHourTime"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="40sp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        />
+
+</RelativeLayout>

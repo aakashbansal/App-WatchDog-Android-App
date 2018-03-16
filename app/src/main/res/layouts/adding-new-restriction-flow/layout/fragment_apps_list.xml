@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="45sp"
+        android:fillViewport="true"
+        android:gravity="center">
+    <ListView
+        android:id="@+id/allAppsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#D3D3D3"
+        android:dividerHeight="1sp"
+        android:listSelector="#D3D3D3" />
+    </ScrollView>
+
+    <Button
+        android:text="CANCEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorAccent"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/cancelButton"
+        android:onClick="onCancelButtonSelected"/>
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="onSelectButtonSelected"
+        android:textColor="@color/colorAccent"
+        android:text="SELECT" />
+
+</RelativeLayout>
