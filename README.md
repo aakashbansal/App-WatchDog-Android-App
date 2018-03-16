@@ -27,6 +27,7 @@ After that open the directory from Android Studio. Go to Run -> Run app to launc
 * ToastController - just a wrapper over native Android ToastController with separate class contaiining all the Toast Mesaages.
 
 **XML Resource Files**
+
 All XML resource files exist in **res->layouts** directory in the code structure.
 Further, different views of the app are all structured into different logical directories.
 ```
