@@ -79,7 +79,8 @@ Following type of restrictions can be set up on an app:
 
 ## Project Structure
 
-**Java Files**
+
+ **Java Files**
 
 * **activity** - contain classes corresponding to different activities.
 
@@ -102,6 +103,7 @@ Following type of restrictions can be set up on an app:
 * **sharedPreferences** - just a wrapper over native Android SharedPreferences API.
 
 * **ToastController** - just a wrapper over native Android ToastController with separate class containing all the Toast Messages.
+
 
 **XML Resource Files**
 
