@@ -14,6 +14,19 @@ Here is the Google Drive Download Link : [Download App WatchDog](https://drive.g
 
 After that open the directory from Android Studio. Go to Run -> Run app to launch the app into emulator or device.
 
+**Error Setting Up Project**
+
+Some users may face a known issue with Android Studio that says something along the lines of : 
+
+```
+Unsupported Modules Detected : ADD MORE TEXT HERE
+```
+
+To overcome thi isuue, go to **File -> Invalidate Caches/Restart**. 
+And allow the project to build a fresh. This may take some time.
+By this time, project shouldbe up and running.
+If still error persists, open the **build.gradle** file . Add some random white spaces in it. This will give a **Sync Now** option on- screen. Click on that and allow the project to sync. The App should finally be working now.
+
 
 
 ## Overview
