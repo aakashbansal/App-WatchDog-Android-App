@@ -19,7 +19,9 @@ After that open the directory from Android Studio. Go to Run -> Run app to launc
 Some users may face a known issue with Android Studio while setting-up this project that says something along the lines of : 
 
 ```
-Unsupported Modules Detected : Compilation is not supported for following modules: App-WatchDog-Android-App, app. Unfortunately you can't have non-Gradle Java modules and Android-Gradle modules in one project.
+Unsupported Modules Detected : Compilation is not supported for following modules: 
+App-WatchDog-Android-App, app.
+Unfortunately you can't have non-Gradle Java modules and Android-Gradle modules in one project.
 
 ```
 
