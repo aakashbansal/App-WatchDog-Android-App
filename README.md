@@ -46,16 +46,14 @@ Following type of restrictions can be set up on an app:
 
 <img src="SCREENSHOTS/AddRestriction.png" width="200"> <img src="SCREENSHOTS/SelectApp.png" width="200"> <img src="SCREENSHOTS/SelectRestrictionType.png" width="200"> <img src="SCREENSHOTS/LaunchRestriction.png" width="200"> <img src="SCREENSHOTS/TimeRestriction.png" width="200"> <img src="SCREENSHOTS/SpecificTimeRestrcition.png" width="200"> <img src="SCREENSHOTS/ConfirmDialog.png" width="200">
 
-**Remove Restriction**
+**View Added Restriction Info**
 
 <img src="SCREENSHOTS/ViewRestrictionTypes.png" width="200">
 <img src="SCREENSHOTS/ViewTimeRestrictionInfo.png" width="200">
 
-**View Added Restriction Info**
+**Remove Restriction**
 
 <img src="SCREENSHOTS/RemoveRestriction.png" width="200">
-
-**Settings**
 
 **Settings**
 
