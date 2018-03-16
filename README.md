@@ -1,7 +1,8 @@
 # App-WatchDog-Android-App
 App WatchDog is an android app built natively in Java using Android Studio. This app tracks the usage statistics of all installed apps (except system apps) and usage restriction can also be set on any app to control its usage.
 
-The app is currently not on the Play Store.Here is the Google Drive Link : https://drive.google.com/open?id=1W-GfTuOBQbFKBL7zMrNbC6z6oe4HE9Ql
+The app is currently not on the Play Store.
+Here is the Google Drive Download Link : [Download App WatchDog](https://drive.google.com/open?id=1W-GfTuOBQbFKBL7zMrNbC6z6oe4HE9Ql)
 
 ## Getting Started
 
