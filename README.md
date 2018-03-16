@@ -59,3 +59,13 @@ To take advantage of the restructured code formart of XML files,
 the project should be opened in "Project" view and not the "Android" view. This setting exist in 3rd or 4th row 
 from upper left corner of ANdroid Studio Screen
 ```
+
+
+## Working
+
+At its core, the app has two services that constantly run in background :
+
+* **AppLaunchDetectService** - This service finds the current running app in foreground and checks to see if it has exceeded its **Usage Limit Quota**. If yes, the app exits. If no, app continues to run.
+* **UsageStatsUpdateService** - This service , as the name suggests, updates the **Usage Stats** (Last Used Time, No of Launches, Time In foreground ) of the given app.
+
+These two services perform the core tasks of the whole app. Everything major that is happening in the app is being constantly performed by these services in one way or the another using various helper functions defined in /**helpe**r directory.
