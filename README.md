@@ -71,7 +71,7 @@ At its core, the app has two services that constantly run in background :
 These two services perform the core tasks of the whole app. Everything major that is happening in the app is being constantly performed by these services in one way or the another using various helper functions defined in /**helper** directory.
 
 
-## Permissions
+## Android Permissions Required
 
 The app requires the **USAGE STATS PERMISSION** to work. Without it, nothing in the app is going to work.
 
@@ -79,3 +79,12 @@ The app requires the **USAGE STATS PERMISSION** to work. Without it, nothing in 
 In some devices (such as Xiaomi), "AUTOSTART" permission will also
 be required to ensure smooth functioning of the app.
 ```
+
+##License
+
+GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ 
+
