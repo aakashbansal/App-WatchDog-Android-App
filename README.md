@@ -27,7 +27,7 @@ Unfortunately you can't have non-Gradle Java modules and Android-Gradle modules 
 
 To overcome this issue, go to **File -> Invalidate Caches/Restart...**. Select **Invalidate and Restart** from the on-screen prompt. Android Studio will restart now.
 
-Allow the project to build afresh. This may take some time. Ignore any intermediate errors such as **Error Loading Project: Cannot load 2 modules**.
+Allow the project to build afresh. This may take some time (a lot actually, depending on the CPU). Let it finish. Ignore any intermediate errors such as **Error Loading Project: Cannot load 2 modules**.
 
 After this step, the project should be up and running.
 
