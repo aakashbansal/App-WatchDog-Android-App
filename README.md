@@ -48,8 +48,7 @@ Following type of restrictions can be set up on an app:
 
 **View Added Restriction Info**
 
-<img src="SCREENSHOTS/ViewRestrictionTypes.png" width="200">
-<img src="SCREENSHOTS/ViewTimeRestrictionInfo.png" width="200">
+<img src="SCREENSHOTS/ViewRestrictionTypes.png" width="200"> <img src="SCREENSHOTS/ViewTimeRestrictionInfo.png" width="200">
 
 **Remove Restriction**
 
