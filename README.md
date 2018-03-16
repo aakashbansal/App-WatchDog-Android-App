@@ -80,6 +80,17 @@ In some devices (such as Xiaomi), "AUTOSTART" permission will also
 be required to ensure smooth functioning of the app.
 ```
 
+
+## Contributing
+
+The goal of this project was to learn basic Android but it grew complex with time.
+If you need any help or support to understand any part of the code,please let me know.
+Any improvements, bug fixes,bug reporting, new features or suggestions are definitely welcome. Those looking to contribute to this code base can do so via Pull Requests. Any contribution is more than welcome and well appreciated. :)
+
+## Contact Info
+
+Email Id : aakashbansals23@gmail.com
+
 ## License
 
 Licensed under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 : https://www.gnu.org/licenses/gpl-3.0.en.html
