@@ -80,17 +80,28 @@ Following type of restrictions can be set up on an app:
 ## Project Structure
 
 **Java Files**
-* activity- contains the files corresponding to different activities
-* adapter - contains list view adapters
-* database - contains files for manipulating the local SQLite Database
-* DialogController - manages the on-screen dialogs
-* fragments- contain codes for displaying fragments
-* helper - contain various classes each with a different set of functions responsible for handling the different business logic of the app codebase. Each type of functions role is abstracted into different java class.
-* model - contains the classes responsible for modelling the data into an entity
-* receiver - contains various broadcast receivers, each responsible for a different role like **device turned on** , **service stopped**, **sending notification**,etc.
-* service- contains the Android services that run in background
-* sharedPreferences- just a wrapper over native Android SharedPreferences API
-* ToastController - just a wrapper over native Android ToastController with separate class containing all the Toast Messages.
+
+* **activity** - contain classes corresponding to different activities.
+
+* **adapter** - contain list view adapters.
+
+* **database** - contain classes for manipulating the local SQLite Database.
+
+* **DialogController** - manages the on-screen dialogs.
+
+* **fragments** - contain classes for displaying fragments.
+
+* **helper** - contain various classes each with a different set of functions responsible for handling the different business logic of the app codebase. Each type of functions role is abstracted into different java class.
+
+* **model** - contain classes responsible for modelling the data into an entity.
+
+* **receiver** - contain various broadcast receivers, each responsible for a different role like **device turned on** , **service stopped**, **sending notification**,etc.
+
+* **service** - contain the Android services that run in background.
+
+* **sharedPreferences** - just a wrapper over native Android SharedPreferences API.
+
+* **ToastController** - just a wrapper over native Android ToastController with separate class containing all the Toast Messages.
 
 **XML Resource Files**
 
