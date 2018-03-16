@@ -25,10 +25,6 @@ It works as a tracker that tracks the app usage activity of a user by telling th
 * How many times was the app launched in the **Current Hour** ?
 * How many times was the app launched on the **Current Day** ?
 
-**App Screenshots for viewing Usage Stats**
-
-<img src="SCREENSHOTS/ViewUsageStats.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats1.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats2.png" width="200">
-
 
 ### Usage Limit Controller
 
@@ -39,10 +35,31 @@ Following type of restrictions can be set up on an app:
 * Restriction on  **Usage Time** allowed ( Per Hour / Per Day ).
 * Restriction during **Specific Time Intervals** (App Access Not Allowed during specified Time Intervals).
 
+
+## App WatchDog Demo
+
+**App Screenshots for viewing Usage Stats**
+
+<img src="SCREENSHOTS/ViewUsageStats.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats1.png" width="200"> <img src="SCREENSHOTS/SampleUsageStats2.png" width="200">
+
 **App Screenshots for Setting Usage Limit**
 
 <img src="SCREENSHOTS/AddRestriction.png" width="200"> <img src="SCREENSHOTS/SelectApp.png" width="200"> <img src="SCREENSHOTS/SelectRestrictionType.png" width="200"> <img src="SCREENSHOTS/LaunchRestriction.png" width="200"> <img src="SCREENSHOTS/TimeRestriction.png" width="200"> <img src="SCREENSHOTS/SpecificTimeRestrcition.png" width="200"> <img src="SCREENSHOTS/ConfirmDialog.png" width="200">
 
+**Remove Restriction**
+
+<img src="SCREENSHOTS/ViewRestrictionTypes.png" width="200">
+<img src="SCREENSHOTS/ViewTimeRestrictionInfo.png" width="200">
+
+**View Added Restriction Info**
+
+<img src="SCREENSHOTS/RemoveRestriction.png" width="200">
+
+**Settings**
+
+**Settings**
+
+<img src="SCREENSHOTS/Settings.png" width="200">
 
 ## Project Structure
 
