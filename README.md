@@ -86,7 +86,9 @@ Following type of restrictions can be set up on an app:
 
 * **adapter** - contain list view adapters.
 
-* **database** - contain classes for manipulating the local SQLite Database. This is further sub-divided into two folders - **dbAddUsageLimit** ( db containing info about restriction limits set-up on apps) and **dbViewUsageStats** (db containing info about Usage Statistics of all installed apps).
+* **database** - contain classes for manipulating the local SQLite Database. This is further sub-divided into two folders : 
+* **dbAddUsageLimit** - for manipulating db that contains info about restriction limits set-up on apps.
+* **dbViewUsageStats** for manipulating db that contains info about **Usage Statistics** of all installed apps.
 
 * **DialogController** - manages the on-screen dialogs.
 
