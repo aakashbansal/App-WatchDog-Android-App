@@ -16,22 +16,25 @@ After that open the directory from Android Studio. Go to Run -> Run app to launc
 
 **Error Setting Up Project**
 
-Some users may face a known issue with Android Studio that says something along the lines of : 
+Some users may face a known issue with Android Studio while setting-up this project that says something along the lines of : 
 
 ```
 Unsupported Modules Detected : ADD MORE TEXT HERE
 ```
 
-To overcome thi isuue, go to **File -> Invalidate Caches/Restart**. 
-And allow the project to build a fresh. This may take some time.
-By this time, project shouldbe up and running.
-If still error persists, open the **build.gradle** file . Add some random white spaces in it. This will give a **Sync Now** option on- screen. Click on that and allow the project to sync. The App should finally be working now.
+To overcome this issue, go to **File -> Invalidate Caches/Restart**. 
+
+And allow the project to build afresh. This may take some time. After this step, the project should be up and running.
+
+If the error still persists, open the **build.gradle** file . Add some random white spaces in it. This will give a **Sync Now** option on-screen. Click on that and allow the project to sync. The App should finally be working now.
+
+**Enjoy :)**
 
 
 
 ## Overview
 
-The app serves in two major ways:
+The app performs **two** major tasks :
 
 ### Usage Stats Tracker
 It works as a tracker that tracks the app usage activity of a user by telling the following info about any given installed app(not system apps) :
@@ -79,26 +82,26 @@ Following type of restrictions can be set up on an app:
 **Java Files**
 * activity- contains the files corresponding to different activities
 * adapter - contains list view adapters
-* database - contains files manipulating SQLite Database
-* DialogController - manages the on screen dialogs
-* fragments- contains codes for displaying fragments
-* helper - contains various files each containing different functions responsible for handling the different business logic of the app codebase. Each type of role is abstracted into different java class.
+* database - contains files for manipulating the local SQLite Database
+* DialogController - manages the on-screen dialogs
+* fragments- contain codes for displaying fragments
+* helper - contain various classes each with a different set of functions responsible for handling the different business logic of the app codebase. Each type of functions role is abstracted into different java class.
 * model - contains the classes responsible for modelling the data into an entity
-* receiver - contains various broadcast receivers, each responsible for a different role like device turned on , service stopped, sending notification,etc.
+* receiver - contains various broadcast receivers, each responsible for a different role like **device turned on** , **service stopped**, **sending notification**,etc.
 * service- contains the Android services that run in background
 * sharedPreferences- just a wrapper over native Android SharedPreferences API
-* ToastController - just a wrapper over native Android ToastController with separate class contaiining all the Toast Mesaages.
+* ToastController - just a wrapper over native Android ToastController with separate class containing all the Toast Messages.
 
 **XML Resource Files**
 
 All XML resource files exist in **res->layouts** directory in the code structure.
 Further, different views of the app are all structured into different logical directories.
 ```
-To take advantage of the restructured code formart of XML files, 
-the project should be opened in "Project" view and not the "Android" view. This setting exist in 3rd or 4th row 
-from upper left corner of ANdroid Studio Screen.
+To take advantage of the restructured code format of XML files, 
+the project should be opened in "Project" view and not the "Android" view. This setting exists in 3rd or 4th row 
+from upper left corner of Android Studio Screen.
 ```
-For more info about how to open the Android Project in **Project** View,  [see this](https://stackoverflow.com/questions/33817556/android-studio-android-project-view-is-missing)
+For more info on how to open the Android Project in **Project** View,  [see this](https://stackoverflow.com/questions/33817556/android-studio-android-project-view-is-missing)
 
 ## Working
 
@@ -109,9 +112,9 @@ At its core, the app has two services that constantly run in background :
 
 These two services perform the core tasks of the whole app. Everything major that is happening in the app is being constantly performed by these services in one way or the another using various helper functions defined in /**helper** directory.
 
-**How does the App ensure that the services continue to run in background even after th app is removed from memory ?**
+**How does the App ensure that the services continue to run in background even after the app is removed from memory ?**
 
-There are two **broadcast receivers** in place, one for each service that restarts them when they are terminated by the User or Android OS.
+There are two **broadcast receivers** in place, one for each service; that restarts them respectively when they are terminated by the User or Android OS.
 
 
 ## Android Permissions Required
