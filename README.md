@@ -80,10 +80,9 @@ In some devices (such as Xiaomi), "AUTOSTART" permission will also
 be required to ensure smooth functioning of the app.
 ```
 
-##License
+## License
 
-GNU GENERAL PUBLIC LICENSE
-                       Version 3, 29 June 2007
+Licensed under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 : https://www.gnu.org/licenses/gpl-3.0.en.html
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
  
