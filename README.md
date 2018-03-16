@@ -57,9 +57,9 @@ Further, different views of the app are all structured into different logical di
 ```
 To take advantage of the restructured code formart of XML files, 
 the project should be opened in "Project" view and not the "Android" view. This setting exist in 3rd or 4th row 
-from upper left corner of ANdroid Studio Screen. [See this](https://stackoverflow.com/questions/33817556/android-studio-android-project-view-is-missing)
+from upper left corner of ANdroid Studio Screen.
 ```
-
+For more info about how to open the Android Project in **Project** View,  [see this](https://stackoverflow.com/questions/33817556/android-studio-android-project-view-is-missing)
 
 ## Working
 
