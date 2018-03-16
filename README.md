@@ -1,7 +1,7 @@
 # App-WatchDog-Android-App
 App WatchDog is an android app built natively in Java using Android Studio. This app tracks the usage statistics of all installed apps (except system apps) and usage restriction can also be set on any app to control its usage.
 
-The app is currently not on the Play Store.
+The app is currently not available on the Play Store.
 Here is the Google Drive Download Link : [Download App WatchDog](https://drive.google.com/open?id=1W-GfTuOBQbFKBL7zMrNbC6z6oe4HE9Ql)
 
 ## Getting Started
@@ -14,7 +14,7 @@ Here is the Google Drive Download Link : [Download App WatchDog](https://drive.g
 
 After that open the directory from Android Studio. Go to Run -> Run app to launch the app into emulator or device.
 
-**Error Setting Up Project**
+**Known Issues While Setting Up The Project**
 
 Some users may face a known issue with Android Studio while setting-up this project that says something along the lines of : 
 
@@ -22,7 +22,6 @@ Some users may face a known issue with Android Studio while setting-up this proj
 Unsupported Modules Detected : Compilation is not supported for following modules: 
 App-WatchDog-Android-App, app.
 Unfortunately you can't have non-Gradle Java modules and Android-Gradle modules in one project.
-
 ```
 
 To overcome this issue, go to **File -> Invalidate Caches/Restart...**. Select **Invalidate and Restart** from the on-screen prompt. Android Studio will restart now.
@@ -154,7 +153,7 @@ be required to ensure smooth functioning of the app.
 
 The goal of this project was to learn basic Android but it grew complex with time.
 If you need any help or support to understand any part of the code,please let me know.
-Any improvements, bug fixes,bug reporting, new features or suggestions are definitely welcome. Those looking to contribute to this code base can do so via Pull Requests. Any contribution is more than welcome and well appreciated. :)
+Any improvements, bug fixes, bug reporting, new features or suggestions are definitely welcome. Those looking to contribute to this code base can also do so via Pull Requests. Any contribution is more than welcome and well appreciated. :)
 
 ## Contact Info
 
