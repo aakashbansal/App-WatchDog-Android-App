@@ -132,7 +132,7 @@ These two services perform the core tasks of the whole app. Everything major tha
 
 **How does the App ensure that the services continue to run in background even after the app is removed from memory ?**
 
-There are two **broadcast receivers** in place, one for each service; that restarts them respectively when they are terminated by the User or Android OS.
+There are two **broadcast receivers** in place, one for each service; that restarts each one of them respectively when they are terminated by the User or Android OS.
 
 
 ## Android Permissions Required
