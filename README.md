@@ -96,6 +96,10 @@ At its core, the app has two services that constantly run in background :
 
 These two services perform the core tasks of the whole app. Everything major that is happening in the app is being constantly performed by these services in one way or the another using various helper functions defined in /**helper** directory.
 
+**How does the App ensure that the services continue to run in background even after th app is removed from memory ?**
+
+There are two **broadcast receivers** in place, one for each service that restarts them when they are terminated by the User or Android OS.
+
 
 ## Android Permissions Required
 
